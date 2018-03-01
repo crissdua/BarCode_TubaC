@@ -63,4 +63,22 @@ Public Class MDI_BC
             Me.Close()
         End If
     End Sub
+
+    Private Sub ProduccionEmisionConsumoMPToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ProduccionEmisionConsumoMPToolStripMenuItem.Click
+        Dim frm1 As New Produccion_Emision.FrmP()
+        frm1.MdiParent = Me
+        frm1.Show()
+    End Sub
+
+    Private Sub ImpresionEtiquetaProduccionPlanificadaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ImpresionEtiquetaProduccionPlanificadaToolStripMenuItem.Click
+        Dim frm1 As New Produccion_F3.FrmP()
+        frm1.MdiParent = Me
+        frm1.Show()
+    End Sub
+
+    Private Sub ProduccionReciboProduccionReportadaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ProduccionReciboProduccionReportadaToolStripMenuItem.Click
+        Dim frm1 As New Produccion_Recibo.FrmP()
+        frm1.MdiParent = Me
+        frm1.Show()
+    End Sub
 End Class
