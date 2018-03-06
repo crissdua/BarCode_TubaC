@@ -60,3 +60,4 @@ C:\Users\Developer\Documents\Visual Studio 2015\Projects\BarCode_TubaC\BarCode_T
 C:\Users\Developer\Documents\Visual Studio 2015\Projects\BarCode_TubaC\BarCode_TubaC\bin\Debug\BusinessObjects.Enterprise.Sdk.netmodule
 C:\Users\Developer\Documents\Visual Studio 2015\Projects\BarCode_TubaC\BarCode_TubaC\bin\Debug\BusinessObjects.Enterprise.Sdk.ZipLib.netmodule
 C:\Users\Developer\Documents\Visual Studio 2015\Projects\BarCode_TubaC\BarCode_TubaC\obj\Debug\BarCode_TubaC.vbproj.BarCode_TubaC.exe.config
+C:\Users\Developer\Documents\Visual Studio 2015\Projects\BarCode_TubaC\BarCode_TubaC\obj\Debug\BarCode_TubaC.Cusuarios.resources

@@ -1,6 +1,7 @@
 ﻿
 Public Class MDI_BC
     Public con As New Conexion
+    Dim PermisoID As Integer
     Private Const CP_NOCLOSE_BUTTON As Integer = &H200
     Protected Overloads Overrides ReadOnly Property CreateParams() As CreateParams
         Get
@@ -9,11 +10,59 @@ Public Class MDI_BC
             Return myCp
         End Get
     End Property
-    Public Sub New(ByVal user As String)
+    Public Sub New(ByVal user As String, ByVal permiso As Integer)
         MyBase.New()
         InitializeComponent()
         '  Note which form has called this one
         ToolStripStatusLabel1.Text = user
+        PermisoID = permiso
+
+        Fase1ToolStripMenuItem.Visible = False
+        PlanificacionProduccionToolStripMenuItem.Visible = False
+        ImpresionBatchToolStripMenuItem.Visible = False
+        TrasladoStockToolStripMenuItem.Visible = False
+        ProduccionReciboToolStripMenuItem.Visible = False
+        ImpresionOrdenesToolStripMenuItem.Visible = False
+        ProduccionReciboToolStripMenuItem1.Visible = False
+        ImpresionEtiquetaProduccionPlanificadaToolStripMenuItem.Visible = False
+        ProduccionEmisionConsumoMPToolStripMenuItem.Visible = False
+        ProduccionReciboProduccionReportadaToolStripMenuItem.Visible = False
+
+        If PermisoID = 1 Then
+            Fase1ToolStripMenuItem.Visible = True
+            PlanificacionProduccionToolStripMenuItem.Visible = True
+
+            ImpresionBatchToolStripMenuItem.Visible = True
+            TrasladoStockToolStripMenuItem.Visible = True
+
+            ImpresionEtiquetaProduccionPlanificadaToolStripMenuItem.Visible = True
+            ProduccionEmisionConsumoMPToolStripMenuItem.Visible = True
+            ProduccionReciboProduccionReportadaToolStripMenuItem.Visible = True
+        End If
+        If PermisoID = 2 Then
+            Fase1ToolStripMenuItem.Visible = True
+            PlanificacionProduccionToolStripMenuItem.Visible = True
+
+            ImpresionBatchToolStripMenuItem.Visible = True
+            TrasladoStockToolStripMenuItem.Visible = True
+
+            ImpresionEtiquetaProduccionPlanificadaToolStripMenuItem.Visible = True
+            ProduccionEmisionConsumoMPToolStripMenuItem.Visible = True
+            ProduccionReciboProduccionReportadaToolStripMenuItem.Visible = True
+        End If
+        If PermisoID = 3 Then
+            Fase1ToolStripMenuItem.Visible = True
+            PlanificacionProduccionToolStripMenuItem.Visible = True
+
+            ImpresionBatchToolStripMenuItem.Visible = True
+            TrasladoStockToolStripMenuItem.Visible = True
+
+            ImpresionEtiquetaProduccionPlanificadaToolStripMenuItem.Visible = True
+            ProduccionEmisionConsumoMPToolStripMenuItem.Visible = True
+            ProduccionReciboProduccionReportadaToolStripMenuItem.Visible = True
+        End If
+
+
     End Sub
     Private Sub MDI_BC_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
@@ -78,6 +127,12 @@ Public Class MDI_BC
 
     Private Sub ProduccionReciboProduccionReportadaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ProduccionReciboProduccionReportadaToolStripMenuItem.Click
         Dim frm1 As New Produccion_Recibo.FrmP()
+        frm1.MdiParent = Me
+        frm1.Show()
+    End Sub
+
+    Private Sub CamposDeUsuarioToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CamposDeUsuarioToolStripMenuItem.Click
+        Dim frm1 As New Cusuarios
         frm1.MdiParent = Me
         frm1.Show()
     End Sub

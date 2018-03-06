@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class MDI_BC
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,31 +20,33 @@ Partial Class MDI_BC
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.ArchivoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CamposDeUsuarioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SalirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Fase1ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ImpresionBatchToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TrasladoStockToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ImpresionOrdenesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ProduccionReciboToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ImpresionOrdenesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ProduccionReciboToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PlanificacionProduccionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ImpresionEtiquetaProduccionPlanificadaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ProduccionEmisionConsumoMPToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ProduccionReciboProduccionReportadaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TirasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
         Me.ToolStripStatusLabel2 = New System.Windows.Forms.ToolStripStatusLabel()
         Me.ToolStripStatusLabel1 = New System.Windows.Forms.ToolStripStatusLabel()
-        Me.PlanificacionProduccionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ProduccionEmisionConsumoMPToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ImpresionEtiquetaProduccionPlanificadaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ProduccionReciboProduccionReportadaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.StatusStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip1
         '
+        Me.MenuStrip1.BackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ArchivoToolStripMenuItem, Me.Fase1ToolStripMenuItem, Me.PlanificacionProduccionToolStripMenuItem, Me.TirasToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
@@ -54,20 +56,28 @@ Partial Class MDI_BC
         '
         'ArchivoToolStripMenuItem
         '
-        Me.ArchivoToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SalirToolStripMenuItem})
+        Me.ArchivoToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CamposDeUsuarioToolStripMenuItem, Me.SalirToolStripMenuItem})
+        Me.ArchivoToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control
         Me.ArchivoToolStripMenuItem.Name = "ArchivoToolStripMenuItem"
         Me.ArchivoToolStripMenuItem.Size = New System.Drawing.Size(60, 20)
         Me.ArchivoToolStripMenuItem.Text = "Archivo"
         '
+        'CamposDeUsuarioToolStripMenuItem
+        '
+        Me.CamposDeUsuarioToolStripMenuItem.Name = "CamposDeUsuarioToolStripMenuItem"
+        Me.CamposDeUsuarioToolStripMenuItem.Size = New System.Drawing.Size(177, 22)
+        Me.CamposDeUsuarioToolStripMenuItem.Text = "Campos de Usuario"
+        '
         'SalirToolStripMenuItem
         '
         Me.SalirToolStripMenuItem.Name = "SalirToolStripMenuItem"
-        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(96, 22)
+        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(177, 22)
         Me.SalirToolStripMenuItem.Text = "Salir"
         '
         'Fase1ToolStripMenuItem
         '
         Me.Fase1ToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ImpresionBatchToolStripMenuItem, Me.TrasladoStockToolStripMenuItem, Me.ProduccionReciboToolStripMenuItem, Me.ImpresionOrdenesToolStripMenuItem, Me.ProduccionReciboToolStripMenuItem1})
+        Me.Fase1ToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control
         Me.Fase1ToolStripMenuItem.Name = "Fase1ToolStripMenuItem"
         Me.Fase1ToolStripMenuItem.Size = New System.Drawing.Size(136, 20)
         Me.Fase1ToolStripMenuItem.Text = "Gestion Materia Prima"
@@ -75,21 +85,14 @@ Partial Class MDI_BC
         'ImpresionBatchToolStripMenuItem
         '
         Me.ImpresionBatchToolStripMenuItem.Name = "ImpresionBatchToolStripMenuItem"
-        Me.ImpresionBatchToolStripMenuItem.Size = New System.Drawing.Size(276, 22)
+        Me.ImpresionBatchToolStripMenuItem.Size = New System.Drawing.Size(303, 22)
         Me.ImpresionBatchToolStripMenuItem.Text = "Impresion Etiquetas Orden de Compra"
         '
         'TrasladoStockToolStripMenuItem
         '
         Me.TrasladoStockToolStripMenuItem.Name = "TrasladoStockToolStripMenuItem"
-        Me.TrasladoStockToolStripMenuItem.Size = New System.Drawing.Size(276, 22)
+        Me.TrasladoStockToolStripMenuItem.Size = New System.Drawing.Size(303, 22)
         Me.TrasladoStockToolStripMenuItem.Text = "Traslado Materia Prima"
-        '
-        'ImpresionOrdenesToolStripMenuItem
-        '
-        Me.ImpresionOrdenesToolStripMenuItem.Name = "ImpresionOrdenesToolStripMenuItem"
-        Me.ImpresionOrdenesToolStripMenuItem.Size = New System.Drawing.Size(303, 22)
-        Me.ImpresionOrdenesToolStripMenuItem.Text = "Impresion Etiqueta Produccion Planificada"
-        Me.ImpresionOrdenesToolStripMenuItem.Visible = False
         '
         'ProduccionReciboToolStripMenuItem
         '
@@ -98,6 +101,13 @@ Partial Class MDI_BC
         Me.ProduccionReciboToolStripMenuItem.Text = "Produccion Emision (Consumo MP)"
         Me.ProduccionReciboToolStripMenuItem.Visible = False
         '
+        'ImpresionOrdenesToolStripMenuItem
+        '
+        Me.ImpresionOrdenesToolStripMenuItem.Name = "ImpresionOrdenesToolStripMenuItem"
+        Me.ImpresionOrdenesToolStripMenuItem.Size = New System.Drawing.Size(303, 22)
+        Me.ImpresionOrdenesToolStripMenuItem.Text = "Impresion Etiqueta Produccion Planificada"
+        Me.ImpresionOrdenesToolStripMenuItem.Visible = False
+        '
         'ProduccionReciboToolStripMenuItem1
         '
         Me.ProduccionReciboToolStripMenuItem1.Name = "ProduccionReciboToolStripMenuItem1"
@@ -105,8 +115,35 @@ Partial Class MDI_BC
         Me.ProduccionReciboToolStripMenuItem1.Text = "Produccion Recibo (Produccion Reportada)"
         Me.ProduccionReciboToolStripMenuItem1.Visible = False
         '
+        'PlanificacionProduccionToolStripMenuItem
+        '
+        Me.PlanificacionProduccionToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ImpresionEtiquetaProduccionPlanificadaToolStripMenuItem, Me.ProduccionEmisionConsumoMPToolStripMenuItem, Me.ProduccionReciboProduccionReportadaToolStripMenuItem})
+        Me.PlanificacionProduccionToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control
+        Me.PlanificacionProduccionToolStripMenuItem.Name = "PlanificacionProduccionToolStripMenuItem"
+        Me.PlanificacionProduccionToolStripMenuItem.Size = New System.Drawing.Size(159, 20)
+        Me.PlanificacionProduccionToolStripMenuItem.Text = "Planificacion / Produccion"
+        '
+        'ImpresionEtiquetaProduccionPlanificadaToolStripMenuItem
+        '
+        Me.ImpresionEtiquetaProduccionPlanificadaToolStripMenuItem.Name = "ImpresionEtiquetaProduccionPlanificadaToolStripMenuItem"
+        Me.ImpresionEtiquetaProduccionPlanificadaToolStripMenuItem.Size = New System.Drawing.Size(303, 22)
+        Me.ImpresionEtiquetaProduccionPlanificadaToolStripMenuItem.Text = "Impresion Etiqueta Produccion Planificada"
+        '
+        'ProduccionEmisionConsumoMPToolStripMenuItem
+        '
+        Me.ProduccionEmisionConsumoMPToolStripMenuItem.Name = "ProduccionEmisionConsumoMPToolStripMenuItem"
+        Me.ProduccionEmisionConsumoMPToolStripMenuItem.Size = New System.Drawing.Size(303, 22)
+        Me.ProduccionEmisionConsumoMPToolStripMenuItem.Text = "Produccion Emision (Consumo MP)"
+        '
+        'ProduccionReciboProduccionReportadaToolStripMenuItem
+        '
+        Me.ProduccionReciboProduccionReportadaToolStripMenuItem.Name = "ProduccionReciboProduccionReportadaToolStripMenuItem"
+        Me.ProduccionReciboProduccionReportadaToolStripMenuItem.Size = New System.Drawing.Size(303, 22)
+        Me.ProduccionReciboProduccionReportadaToolStripMenuItem.Text = "Produccion Recibo (Produccion Reportada)"
+        '
         'TirasToolStripMenuItem
         '
+        Me.TirasToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control
         Me.TirasToolStripMenuItem.Name = "TirasToolStripMenuItem"
         Me.TirasToolStripMenuItem.Size = New System.Drawing.Size(44, 20)
         Me.TirasToolStripMenuItem.Text = "Tiras"
@@ -132,38 +169,12 @@ Partial Class MDI_BC
         Me.ToolStripStatusLabel1.Size = New System.Drawing.Size(120, 17)
         Me.ToolStripStatusLabel1.Text = "ToolStripStatusLabel1"
         '
-        'PlanificacionProduccionToolStripMenuItem
-        '
-        Me.PlanificacionProduccionToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ImpresionEtiquetaProduccionPlanificadaToolStripMenuItem, Me.ProduccionEmisionConsumoMPToolStripMenuItem, Me.ProduccionReciboProduccionReportadaToolStripMenuItem})
-        Me.PlanificacionProduccionToolStripMenuItem.Name = "PlanificacionProduccionToolStripMenuItem"
-        Me.PlanificacionProduccionToolStripMenuItem.Size = New System.Drawing.Size(159, 20)
-        Me.PlanificacionProduccionToolStripMenuItem.Text = "Planificacion / Produccion"
-        '
-        'ProduccionEmisionConsumoMPToolStripMenuItem
-        '
-        Me.ProduccionEmisionConsumoMPToolStripMenuItem.Name = "ProduccionEmisionConsumoMPToolStripMenuItem"
-        Me.ProduccionEmisionConsumoMPToolStripMenuItem.Size = New System.Drawing.Size(303, 22)
-        Me.ProduccionEmisionConsumoMPToolStripMenuItem.Text = "Produccion Emision (Consumo MP)"
-        '
-        'ImpresionEtiquetaProduccionPlanificadaToolStripMenuItem
-        '
-        Me.ImpresionEtiquetaProduccionPlanificadaToolStripMenuItem.Name = "ImpresionEtiquetaProduccionPlanificadaToolStripMenuItem"
-        Me.ImpresionEtiquetaProduccionPlanificadaToolStripMenuItem.Size = New System.Drawing.Size(303, 22)
-        Me.ImpresionEtiquetaProduccionPlanificadaToolStripMenuItem.Text = "Impresion Etiqueta Produccion Planificada"
-        '
-        'ProduccionReciboProduccionReportadaToolStripMenuItem
-        '
-        Me.ProduccionReciboProduccionReportadaToolStripMenuItem.Name = "ProduccionReciboProduccionReportadaToolStripMenuItem"
-        Me.ProduccionReciboProduccionReportadaToolStripMenuItem.Size = New System.Drawing.Size(303, 22)
-        Me.ProduccionReciboProduccionReportadaToolStripMenuItem.Text = "Produccion Recibo (Produccion Reportada)"
-        '
         'MDI_BC
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Control
-        Me.BackgroundImage = Global.BarCode_TubaC.My.Resources.Resources.logo
-        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.ClientSize = New System.Drawing.Size(1199, 511)
         Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.MenuStrip1)
@@ -200,4 +211,5 @@ Partial Class MDI_BC
     Friend WithEvents ImpresionEtiquetaProduccionPlanificadaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ProduccionEmisionConsumoMPToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ProduccionReciboProduccionReportadaToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents CamposDeUsuarioToolStripMenuItem As ToolStripMenuItem
 End Class
