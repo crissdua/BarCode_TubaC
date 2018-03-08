@@ -1,0 +1,16 @@
+﻿create Procedure [dbo].[SP_BarCode]
+@Dockey int
+
+as 
+Begin
+
+
+SELECT t4.ItemCode as 'Codigo de Articulo',t4.ItemName as 'Descripcion del Articulo',SUM(CASE T4.Direction when 0 then 1 else -1 end * T4.Quantity) as TM, T4.BatchNum as Lote,CONVERT(int,t3.U_Ancho) as Ancho,T3.U_Heat as Heat,t3.U_Coi as Coil,t4.whscode as Almacen
+FROM OITL T0
+    INNER JOIN OPDN T2 on t2.DocEntry = t0.DocEntry		
+    INNER JOIN ITL1 T1 ON T0.LogEntry = T1.LogEntry
+    INNER JOIN OBTN T3 ON T1.MdAbsEntry = T3.AbsEntry
+    inner join IBT1 T4 on T4.BatchNum = T3.DistNumber
+    WHERE T0.DocEntry =  @Dockey AND T0.DocNum =  @Dockey and T0.BaseEntry = 0 and t4.WhsCode = 'BMP1'
+    GROUP BY t4.ItemCode,t4.itemname,T4.BatchNum , T3.U_Heat,t3.U_Coi,t3.U_Ancho,t3.U_Correlativo,T4.whscode
+end

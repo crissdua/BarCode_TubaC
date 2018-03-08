@@ -24,7 +24,6 @@ Partial Class MDI_BC
     Private Sub InitializeComponent()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.ArchivoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CamposDeUsuarioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SalirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Fase1ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ImpresionBatchToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -56,22 +55,16 @@ Partial Class MDI_BC
         '
         'ArchivoToolStripMenuItem
         '
-        Me.ArchivoToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CamposDeUsuarioToolStripMenuItem, Me.SalirToolStripMenuItem})
+        Me.ArchivoToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SalirToolStripMenuItem})
         Me.ArchivoToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control
         Me.ArchivoToolStripMenuItem.Name = "ArchivoToolStripMenuItem"
         Me.ArchivoToolStripMenuItem.Size = New System.Drawing.Size(60, 20)
         Me.ArchivoToolStripMenuItem.Text = "Archivo"
         '
-        'CamposDeUsuarioToolStripMenuItem
-        '
-        Me.CamposDeUsuarioToolStripMenuItem.Name = "CamposDeUsuarioToolStripMenuItem"
-        Me.CamposDeUsuarioToolStripMenuItem.Size = New System.Drawing.Size(177, 22)
-        Me.CamposDeUsuarioToolStripMenuItem.Text = "Campos de Usuario"
-        '
         'SalirToolStripMenuItem
         '
         Me.SalirToolStripMenuItem.Name = "SalirToolStripMenuItem"
-        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(177, 22)
+        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.SalirToolStripMenuItem.Text = "Salir"
         '
         'Fase1ToolStripMenuItem
@@ -145,8 +138,8 @@ Partial Class MDI_BC
         '
         Me.TirasToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Control
         Me.TirasToolStripMenuItem.Name = "TirasToolStripMenuItem"
-        Me.TirasToolStripMenuItem.Size = New System.Drawing.Size(44, 20)
-        Me.TirasToolStripMenuItem.Text = "Tiras"
+        Me.TirasToolStripMenuItem.Size = New System.Drawing.Size(139, 20)
+        Me.TirasToolStripMenuItem.Text = "Gestion de Produccion"
         '
         'StatusStrip1
         '
@@ -211,5 +204,4 @@ Partial Class MDI_BC
     Friend WithEvents ImpresionEtiquetaProduccionPlanificadaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ProduccionEmisionConsumoMPToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ProduccionReciboProduccionReportadaToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents CamposDeUsuarioToolStripMenuItem As ToolStripMenuItem
 End Class

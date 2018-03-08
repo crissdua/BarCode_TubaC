@@ -19,47 +19,31 @@ Public Class MDI_BC
 
         Fase1ToolStripMenuItem.Visible = False
         PlanificacionProduccionToolStripMenuItem.Visible = False
-        ImpresionBatchToolStripMenuItem.Visible = False
-        TrasladoStockToolStripMenuItem.Visible = False
-        ProduccionReciboToolStripMenuItem.Visible = False
-        ImpresionOrdenesToolStripMenuItem.Visible = False
-        ProduccionReciboToolStripMenuItem1.Visible = False
-        ImpresionEtiquetaProduccionPlanificadaToolStripMenuItem.Visible = False
-        ProduccionEmisionConsumoMPToolStripMenuItem.Visible = False
-        ProduccionReciboProduccionReportadaToolStripMenuItem.Visible = False
-
+        TirasToolStripMenuItem.Visible = False
         If PermisoID = 1 Then
             Fase1ToolStripMenuItem.Visible = True
-            PlanificacionProduccionToolStripMenuItem.Visible = True
 
             ImpresionBatchToolStripMenuItem.Visible = True
             TrasladoStockToolStripMenuItem.Visible = True
 
-            ImpresionEtiquetaProduccionPlanificadaToolStripMenuItem.Visible = True
-            ProduccionEmisionConsumoMPToolStripMenuItem.Visible = True
-            ProduccionReciboProduccionReportadaToolStripMenuItem.Visible = True
         End If
         If PermisoID = 2 Then
-            Fase1ToolStripMenuItem.Visible = True
             PlanificacionProduccionToolStripMenuItem.Visible = True
-
-            ImpresionBatchToolStripMenuItem.Visible = True
-            TrasladoStockToolStripMenuItem.Visible = True
 
             ImpresionEtiquetaProduccionPlanificadaToolStripMenuItem.Visible = True
             ProduccionEmisionConsumoMPToolStripMenuItem.Visible = True
             ProduccionReciboProduccionReportadaToolStripMenuItem.Visible = True
         End If
         If PermisoID = 3 Then
+
+            TirasToolStripMenuItem.Visible = True
+
+        End If
+
+        If PermisoID = 4 Then
             Fase1ToolStripMenuItem.Visible = True
             PlanificacionProduccionToolStripMenuItem.Visible = True
-
-            ImpresionBatchToolStripMenuItem.Visible = True
-            TrasladoStockToolStripMenuItem.Visible = True
-
-            ImpresionEtiquetaProduccionPlanificadaToolStripMenuItem.Visible = True
-            ProduccionEmisionConsumoMPToolStripMenuItem.Visible = True
-            ProduccionReciboProduccionReportadaToolStripMenuItem.Visible = True
+            TirasToolStripMenuItem.Visible = True
         End If
 
 
@@ -131,7 +115,7 @@ Public Class MDI_BC
         frm1.Show()
     End Sub
 
-    Private Sub CamposDeUsuarioToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CamposDeUsuarioToolStripMenuItem.Click
+    Private Sub CamposDeUsuarioToolStripMenuItem_Click(sender As Object, e As EventArgs)
         Dim frm1 As New Cusuarios
         frm1.MdiParent = Me
         frm1.Show()

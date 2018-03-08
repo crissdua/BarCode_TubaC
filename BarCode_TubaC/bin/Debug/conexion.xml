@@ -5,11 +5,11 @@
     <DbUserName>sa</DbUserName>
     <DbPassword>12345</DbPassword>
     <Server>DESKTOP-11I1U7D</Server>
-    <CompanyDB>2016Tubex_Productiva</CompanyDB>
+    <CompanyDB>2016Tubex_Productiva_Nueva</CompanyDB>
   </HANA>
 	<SQL>
 		<ip>DESKTOP-11I1U7D</ip>
-		<db>2016Tubex_Productiva</db>
+		<db>2016Tubex_Productiva_Nueva</db>
 		<user>sa</user>
 		<password>12345</password>
 	</SQL>
