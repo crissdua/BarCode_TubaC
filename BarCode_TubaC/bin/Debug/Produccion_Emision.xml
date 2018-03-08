@@ -22,6 +22,31 @@ Produccion_Emision
   búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
 </summary>
 </member>
+<member name="P:Produccion_Emision.My.Resources.Resources.cancelar">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Produccion_Emision.My.Resources.Resources.crear">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Produccion_Emision.My.Resources.Resources.emision">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Produccion_Emision.My.Resources.Resources.fondo">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Produccion_Emision.My.Resources.Resources.fondoGrande">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Produccion_Emision.My.Resources.Resources.gears1">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.

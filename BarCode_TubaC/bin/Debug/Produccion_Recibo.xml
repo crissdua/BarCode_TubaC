@@ -22,7 +22,27 @@ Produccion_Recibo
   búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
 </summary>
 </member>
+<member name="P:Produccion_Recibo.My.Resources.Resources.button">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Produccion_Recibo.My.Resources.Resources.cancelar">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Produccion_Recibo.My.Resources.Resources.crear">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Produccion_Recibo.My.Resources.Resources.gears1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Produccion_Recibo.My.Resources.Resources.login">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
