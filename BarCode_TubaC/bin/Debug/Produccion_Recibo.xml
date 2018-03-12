@@ -37,6 +37,11 @@ Produccion_Recibo
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:Produccion_Recibo.My.Resources.Resources.fondoGrande">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Produccion_Recibo.My.Resources.Resources.gears1">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
